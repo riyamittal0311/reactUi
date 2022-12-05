@@ -1,0 +1,52 @@
+@use './style/variable.scss';
+@use './style/partial';
+
+.dashboard{
+    display: flex;
+    justify-content: center;
+    .nav-tabs{
+        margin-top: 20px;
+    }
+
+     .nav-link{
+        padding: 7px;
+        font-size: 14px;
+        font-weight: bolder;
+        color:variable.$header_background ;
+     }
+
+
+     .tags-dash{
+        background-color: variable.$header_a_hover ;
+        margin: 20px;
+        padding-top: 10px;
+        font-size: 14px;
+        border-radius: 10px;
+        height:165px;
+        h6{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 6%;
+        }
+
+        .tag{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            span{
+                cursor: pointer;
+                padding: 3%;
+                border: 1px solid variable.$header_a;
+                border-radius: 15px;
+                margin-left: 4%;
+                margin-bottom: 4%;
+                background-color: white;
+            &:hover{
+                background-color: gray;
+                color: white;
+            }
+            }
+        }
+        
+     }
+}

@@ -1,0 +1,54 @@
+@use '../style/partial' as p;
+@use '../style/variable.scss';
+
+.profile{
+    margin: 2% 4% 0 5%;
+    .nav-tabs{
+      @extend .nav-link;
+    }
+
+     .nav-link{
+      padding-bottom: 0px;
+      font-weight: 700;
+        @extend .nav-tabs;
+     }
+     .banner{
+      justify-content: center;
+      .image{
+        width: 20%;
+        div{
+          width: 100%;
+          justify-content: center;
+          display: flex;
+          img{
+            border-radius: 50%;
+          }
+          .name{
+            justify-content: center;
+            padding-top: 10px;
+            font-weight: bold;
+          }
+        }
+      }
+
+        .follow {
+          .text{
+             cursor: pointer;
+          border: 1px solid variable.$header_a_hover;
+          min-width: 10%;
+          max-width: 13%;
+          text-decoration: none;
+          border-radius: 10px;
+          font-weight: bold;
+          color: variable.$header_a_hover; 
+            &:hover{
+            color: white;
+            background-color:variable.$header_a_hover;;
+          }
+          }
+         
+       
+        }
+     
+     }
+}

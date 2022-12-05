@@ -1,0 +1,78 @@
+@use '../../style//variable.scss';
+
+.post{
+    padding: 2%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid variable.$header_a_hover;
+    .image img{
+        // border: 1px solid;
+        // cursor: pointer;
+        // border-radius: 50%;
+        // margin-right: 10px;
+        // height: 37px;
+        // width: 45px;
+        border-radius: 50%;
+        width: 100%;
+    }
+    
+
+    .user{
+        color: variable.$header_background;
+         &:first-of-type(div){
+            text-decoration: underline;
+         }
+        .date{
+            font-size: 10px;
+            font-weight: bold;
+            color:variable.$header_a_hover; 
+        }
+    }
+    .likes{
+        border: 1px solid variable.$header_background;
+        border-radius: 4px;
+        font-size: 13px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 30px;
+        color:variable.$header_background ;
+
+        &:hover{
+            background-color:variable.$header_background ;
+            color:variable.$header_a  ;
+
+        }
+    }
+    .content{
+        font-size: 1rem;
+         margin-top: 2%
+    }
+
+    .last-part{
+        font-size: 12px;
+        color:variable.$header_a_hover; 
+        cursor: pointer;
+        .read-more:hover{
+            text-decoration: underline;
+        }
+        .tags{
+            span{
+                margin: 1%;
+                padding: 1%;
+                border: 1px solid;
+                border-radius: 12px;
+                &:hover{
+                    background-color:variable.$header_a_hover;
+                    color:variable.$header_a ;
+                }
+                
+            }
+          
+        }
+    }
+
+    &:hover{
+        background-color: aliceblue;
+    }
+}

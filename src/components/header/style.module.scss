@@ -1,0 +1,26 @@
+@use '../style/variable.scss';
+
+.header{
+     background-color:variable.$header-background ;
+     height:variable.$header_height  ;
+     display: flex;
+     justify-content: space-between;
+     ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+     }
+     li{
+        list-style: none;
+        padding: 10px;
+        align-items: center;
+        display: flex;
+     }
+     a{
+        color: variable.$header-a ;
+        text-decoration: none;
+        &:hover,.active{
+            color: variable.$header_a_hover ;
+        } 
+     }
+}
